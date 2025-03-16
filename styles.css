@@ -1,0 +1,93 @@
+/*!******************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles.css ***!
+  \******************************************************************/
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161a1e;
+}
+
+canvas {
+    display: block;
+}
+
+.upgrade-container {
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.upgrade-option {
+    margin-top: 20px;
+    position: relative;
+}
+
+.upgrade-option::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    opacity: 0.5;
+    background-color: aliceblue;
+}
+
+.upgrade-option:first-child {
+    margin-top: 0;
+}
+
+.upgrade-option:first-child::before {
+    display: none;
+}
+
+.upgrade-status {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.upgrade-bar {
+    display: flex;
+}
+
+.upgrade-bar-cell {
+    width: 20px;
+    height: 10px;
+    background-color: grey;
+    border: solid 1px black;
+}
+
+.upgrade-bar-cell.active {
+    background-color: rgb(27, 131, 228);
+}
+
+.upgrade-btns {
+    display: flex;
+    margin-left: 10px;
+}
+
+.upgrade-btn {
+    cursor: pointer;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(63, 59, 59);
+    line-height: 0;
+}
+
+.upgrade-btn:hover {
+    background-color: rgb(54, 47, 37);
+}
+
+.upgrade-btn:last-child {
+    margin-left: 10px;
+}
+
