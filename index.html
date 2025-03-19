@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        button {
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Old versions of Firefox */
+                -ms-user-select: none; /* Internet Explorer/Edge */
+                    user-select: none;
+        }
+    </style>
 <script defer src="bundle.js"></script><link href="styles.css" rel="stylesheet"></head>
 <body>
     <div id="game-container"></div>
-    <div class="upgrade-container">
+    <!-- <div class="upgrade-container">
         <div class="upgrade-panel">
             <div id="movement-speed" class="upgrade-option">
                 <div class="upgrade-label">Movement speed <span>100</span>%</div>
@@ -121,7 +131,58 @@
                     </div>
                 </div>
             </div>
+            <div id="attack-speed" class="upgrade-option">
+                <div class="upgrade-label">Attack speed <span>200</span>%</div>
+                <div class="upgrade-status">
+                    <div class="upgrade-bar">
+                        <div class="upgrade-bar-cell"></div>
+                        <div class="upgrade-bar-cell"></div>
+                        <div class="upgrade-bar-cell"></div>
+                        <div class="upgrade-bar-cell"></div>
+                        <div class="upgrade-bar-cell"></div>
+                    </div>
+                    <div class="upgrade-btns">
+                        <div class="upgrade-btn btn">+</div>
+                        <div class="upgrade-btn btn">-</div>
+                    </div>
+                </div>
+            </div>
+            <div id="attack-distance" class="upgrade-option">
+                <div class="upgrade-label">Attack distance <span>100</span>px</div>
+                <div class="upgrade-status">
+                    <div class="upgrade-bar">
+                        <div class="upgrade-bar-cell"></div>
+                        <div class="upgrade-bar-cell"></div>
+                        <div class="upgrade-bar-cell"></div>
+                        <div class="upgrade-bar-cell"></div>
+                        <div class="upgrade-bar-cell"></div>
+                    </div>
+                    <div class="upgrade-btns">
+                        <div class="upgrade-btn btn">+</div>
+                        <div class="upgrade-btn btn">-</div>
+                    </div>
+                </div>
+            </div>
+            <div id="attack-cooldown" class="upgrade-option">
+                <div class="upgrade-label">Attack cooldown <span>1500</span>ms</div>
+                <div class="upgrade-status">
+                    <div class="upgrade-bar">
+                        <div class="upgrade-bar-cell"></div>
+                        <div class="upgrade-bar-cell"></div>
+                        <div class="upgrade-bar-cell"></div>
+                        <div class="upgrade-bar-cell"></div>
+                        <div class="upgrade-bar-cell"></div>
+                    </div>
+                    <div class="upgrade-btns">
+                        <div class="upgrade-btn btn">+</div>
+                        <div class="upgrade-btn btn">-</div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </div> -->
+    <button id="add-enemy">Добавить врага</button>
+    <button id="revive">Воскреснуть</button>
+    <button id="add-fireball">Запустить огненный шар</button>
 </body>
 </html>
